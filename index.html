@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function add(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a + b;
+        document.getElementById("answer").value= c;
+        }
+        function sub(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a - b;
+        document.getElementById("answer").value= c;
+        }
+        function mul(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a * b;
+        document.getElementById("answer").value= c;
+        }
+        function div(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a / b;
+        document.getElementById("answer").value= c;
+        }
+        
+
+        </script>
+</head>
+<body>
+        Enter the 1st number : <input id="first"><br><br>
+        Enter the 2nd number: <input id="second"><br><br>
+        <button onclick="add()">Add</button>
+        <button onclick="sub()">sub</button>
+        <button onclick="mul()">mul</button>
+        <button onclick="div()">div</button><br><br>
+        <input id="answer">
+        
+    
+</body>
+</html>
